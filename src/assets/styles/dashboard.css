@@ -1,0 +1,100 @@
+/* Dashboard specific styles */
+.dashboard-layout {
+  @apply min-h-screen bg-gray-50;
+}
+
+.dark .dashboard-layout {
+  @apply bg-gray-900;
+}
+
+.sidebar {
+  @apply fixed left-0 top-0 h-full w-64 bg-white shadow-lg z-40 transform transition-transform duration-300;
+}
+
+.dark .sidebar {
+  @apply bg-gray-800;
+}
+
+.sidebar-closed {
+  @apply -translate-x-full;
+}
+
+.main-content {
+  @apply ml-64 p-6 transition-all duration-300;
+}
+
+.main-content-full {
+  @apply ml-0;
+}
+
+.header {
+  @apply bg-white shadow-sm border-b border-gray-200 sticky top-0 z-30;
+}
+
+.dark .header {
+  @apply bg-gray-800 border-gray-700;
+}
+
+.metrics-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4;
+}
+
+.chart-container {
+  @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+}
+
+.dark .chart-container {
+  @apply bg-gray-800 border-gray-700;
+}
+
+.software-list {
+  @apply bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden;
+}
+
+.dark .software-list {
+  @apply bg-gray-800 border-gray-700;
+}
+
+.software-item {
+  @apply border-b border-gray-100 last:border-b-0 p-4 hover:bg-gray-50 transition-colors;
+}
+
+.dark .software-item {
+  @apply border-gray-700 hover:bg-gray-700;
+}
+
+.metric-card {
+  @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+}
+
+.dark .metric-card {
+  @apply bg-gray-800 border-gray-700;
+}
+
+.status-indicator {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.status-online {
+  @apply bg-green-100 text-green-800;
+}
+
+.dark .status-online {
+  @apply bg-green-900/30 text-green-400;
+}
+
+.status-offline {
+  @apply bg-red-100 text-red-800;
+}
+
+.dark .status-offline {
+  @apply bg-red-900/30 text-red-400;
+}
+
+.status-warning {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.dark .status-warning {
+  @apply bg-yellow-900/30 text-yellow-400;
+}
